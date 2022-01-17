@@ -1,0 +1,169 @@
+/*   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: cursive;
+}
+/* HOME */
+.home {
+  height: 450px;
+  max-width: 100%;
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.753),
+      rgba(4, 9, 30, 0.651)
+    ),
+    url("images/case.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: scroll;
+}
+.home h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: capitalize;
+}
+.home h1:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  text-shadow: 3px 2px 2px black;
+  color: cornflowerblue;
+}
+/* NAV */
+a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.home p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+  top: 45px;
+  text-align: center;
+}
+/* HOME BUTTON */
+.btn1 {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  cursor: pointer;
+  background: #e59b05;
+  padding: 12px 34px;
+  font-size: 13px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.btn1:hover {
+  border: 4px solid orangered;
+  transition: 1s;
+}
+/* FEATURED */
+.featured {
+  background-color: lightgray;
+}
+.top{
+  margin-top: 2%;
+  padding: 20px;
+}
+
+/* PRODUCT 1 AND 2 */
+
+.products,
+h1 {
+  text-align: center;
+}
+
+.product1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  padding: 20px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 20px;
+}
+.alignleft {
+  font-size: 40px;
+}
+
+.right {
+  float: right;
+  border-radius: 15%;
+  width: 50%;
+}
+.right:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.product2 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  background-color: brown;
+  margin-top: 5%;
+  margin-left: 15%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.left:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.alignright {
+  font-size: 40px;
+}
+.left {
+  border-radius: 20px;
+}
+.d-block w-100 {
+  width: 400px !important;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .home h1 {
+    font-size: 35px;
+  }
+  .home h1:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+  }
+  .home p {
+    color: brown;
+    font-weight: bolder;
+  }
+  .btn1:hover {
+    font-size: 20px;
+  }
+  .left {
+    width: 90px;
+    height: 100px;
+  }
+  .right {
+    width: 90px;
+    height: 100px;
+  }
+  .featured {
+    background-color: lightgray;
+  }
+  .top{
+    margin-top: 2%;
+    padding: 20px;
+  }
+}
+
+/* ENDING STYLING */
